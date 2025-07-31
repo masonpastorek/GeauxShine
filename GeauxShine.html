@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geaux Shine Pressure Washing</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for consistent typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to ensure Inter font and base colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* New background for the entire website: Louisiana swamp */
+            background-image: url('https://www.explorelouisiana.com/sites/default/files/legacy_images/Airboat%20Swamp%20Tour%20web.jpg');
+            background-size: cover; /* Cover the entire viewport */
+            background-attachment: fixed; /* Keep background fixed while scrolling */
+            background-repeat: no-repeat; /* Prevent repeating */
+            background-color: #f8fafc; /* Fallback color */
+            /* Changed default text color to a lighter shade for better contrast with the dark background */
+            color: #e0e0e0; /* Light gray text for better readability on dark swamp background */
+        }
+        /* Smooth scroll behavior for navigation links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar: Sticky at the top with a green theme and black text -->
+    <nav class="bg-green-600 p-4 shadow-lg sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Business Name/Logo: "Geaux Shine" with black text -->
+            <a href="#" class="text-black text-3xl font-bold tracking-tight rounded-md p-2 hover:bg-green-700 transition duration-300">Geaux Shine</a>
+
+            <!-- Mobile Menu Button (Hamburger icon) for smaller screens -->
+            <button id="mobile-menu-button" class="text-black md:hidden focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links: Hidden on mobile by default, shown on larger screens, with black text -->
+            <div id="mobile-menu" class="hidden md:flex md:items-center md:w-auto w-full">
+                <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 w-full md:w-auto">
+                    <li><a href="#home" class="block py-2 px-4 text-black hover:bg-green-700 rounded-md transition duration-300">Home</a></li>
+                    <li><a href="#services" class="block py-2 px-4 text-black hover:bg-green-700 rounded-md transition duration-300">Services</a></li>
+                    <li><a href="#about" class="block py-2 px-4 text-black hover:bg-green-700 rounded-md transition duration-300">About Us</a></li>
+                    <li><a href="#contact" class="block py-2 px-4 text-black hover:bg-green-700 rounded-md transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Full-screen, now transparent to show body background -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-center p-4">
+        <!-- Overlay for better text readability on the swamp background -->
+        <div class="absolute inset-0 bg-black opacity-60 rounded-lg"></div>
+        <!-- Content box with its own background image and white text -->
+        <div class="relative z-10 max-w-4xl mx-auto p-8 rounded-xl shadow-2xl backdrop-blur-sm
+                    bg-cover bg-center"
+                    style="background-image: url('https://gatorpowerwashing.com/files/2023/09/pressure-washing-pavestone.jpg');">
+            <!-- Text color changed to black -->
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 drop-shadow-lg text-black">
+                Restore Your Property's Shine
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light text-black">
+                Professional pressure washing services for homes and businesses in Baton Rouge.
+            </p>
+            <!-- Button text remains black -->
+            <a href="#contact" class="inline-block bg-yellow-400 text-black font-bold py-4 px-8 rounded-full shadow-lg hover:bg-yellow-300 transform hover:scale-105 transition duration-300 ease-in-out text-lg uppercase tracking-wide">
+                Get a Free Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section: Displays various pressure washing services in a grid layout -->
+    <section id="services" class="py-16 bg-green-100 bg-opacity-90 rounded-xl shadow-inner mx-auto my-12 max-w-6xl p-6">
+        <div class="container mx-auto text-center">
+            <!-- Heading text changed to black -->
+            <h2 class="text-black text-4xl font-bold mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Residential Pressure Washing -->
+                <div class="bg-green-50 bg-opacity-95 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-gray-200">
+                    <!-- Icon color changed to green -->
+                    <div class="text-green-700 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Residential Pressure Washing</h3>
+                    <p class="text-gray-600">
+                        Restore the beauty of your home's exterior, driveways, patios, and fences. We remove dirt, grime, mold, and mildew.
+                    </p>
+                </div>
+
+                <!-- Service Card 2: Commercial Pressure Washing -->
+                <div class="bg-green-50 bg-opacity-95 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-gray-200">
+                    <!-- Icon color changed to green -->
+                    <div class="text-green-700 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m-1 4h1m-1 4h1m-1 3h1m-8-4h1m-1 4h1m-1 3h1M4 4h16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Commercial Pressure Washing</h3>
+                    <p class="text-gray-600">
+                        Maintain a professional appearance for your business with our commercial building, sidewalk, and parking lot cleaning.
+                    </p>
+                </div>
+
+                <!-- Service Card 3: Deck & Patio Cleaning -->
+                <div class="bg-green-50 bg-opacity-95 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-gray-200">
+                    <!-- Icon color changed to green -->
+                    <div class="text-green-700 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Deck & Patio Cleaning</h3>
+                    <p class="text-gray-600">
+                        Bring your outdoor living spaces back to life. Safe and effective cleaning for wood, composite, and concrete surfaces.
+                    </p>
+                </div>
+
+                <!-- Service Card 4: Driveway & Sidewalk Cleaning -->
+                <div class="bg-green-50 bg-opacity-95 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-gray-200">
+                    <!-- Icon color changed to green -->
+                    <div class="text-green-700 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Driveway & Sidewalk Cleaning</h3>
+                    <p class="text-gray-600">
+                        Eliminate oil stains, tire marks, dirt, and weeds from your concrete and paved surfaces.
+                    </p>
+                </div>
+
+                <!-- Service Card 5: Fence Cleaning -->
+                <div class="bg-green-50 bg-opacity-95 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-gray-200">
+                    <!-- Icon color changed to green -->
+                    <div class="text-green-700 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Fence Cleaning</h3>
+                    <p class="text-gray-600">
+                        Revitalize your wooden or vinyl fences, removing algae, mildew, and weathering for a fresh look.
+                    </p>
+                </div>
+
+                <!-- Service Card 6: Roof Soft Washing -->
+                <div class="bg-green-50 bg-opacity-95 p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-gray-200">
+                    <!-- Icon color changed to green -->
+                    <div class="text-green-700 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Roof Soft Washing</h3>
+                    <p class="text-gray-600">
+                        Gentle, low-pressure cleaning to safely remove streaks, moss, and algae from your roof without damage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section: Information about Geaux Shine with an image -->
+    <section id="about" class="py-16 bg-green-800 text-white rounded-xl shadow-inner mx-auto my-12 max-w-6xl p-6">
+        <div class="container mx-auto text-center md:flex md:items-center md:text-left">
+            <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+                <!-- Image for About Us section -->
+                <img src="https://www.eveagetool.com/wp-content/uploads/2022/07/DriveWay-Pressure-Washing.webp">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">About Geaux Shine</h2>
+                <p class="text-lg leading-relaxed mb-4">
+                    At Geaux Shine, we are dedicated to providing top-quality pressure washing services that rejuvenate your property. Based in Baton Rouge, we serve both residential and commercial clients with a commitment to excellence and customer satisfaction.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Our team uses state-of-the-art equipment and eco-friendly cleaning solutions to safely and effectively remove dirt, grime, mold, and other unsightly build-ups, leaving your surfaces sparkling clean.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section: Form for inquiries and direct contact information -->
+    <section id="contact" class="py-16 bg-green-100 bg-opacity-90 rounded-xl shadow-inner mx-auto my-12 max-w-6xl p-6">
+        <div class="container mx-auto text-center">
+            <!-- Heading text changed to black -->
+            <h2 class="text-black text-4xl font-bold mb-12">Get in Touch</h2>
+            <div class="max-w-xl mx-auto bg-green-50 bg-opacity-95 p-8 rounded-2xl shadow-xl border border-gray-200">
+                <p class="text-lg text-gray-700 mb-6">
+                    Ready to transform your property? Contact us today for a free estimate!
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-left text-gray-700 text-sm font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name"
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left text-gray-700 text-sm font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com"
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-left text-gray-700 text-sm font-semibold mb-2">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890"
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-left text-gray-700 text-sm font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."
+                                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200"></textarea>
+                    </div>
+                    <!-- Button background changed to green, text to black -->
+                    <button type="submit"
+                            class="w-full bg-green-600 text-black font-bold py-3 px-6 rounded-full shadow-md hover:bg-green-700 transform hover:scale-105 transition duration-300 ease-in-out text-lg uppercase tracking-wide">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-8 text-gray-600">
+                    <p class="mb-2">Or call us directly:</p>
+                    <!-- Phone number text changed to black -->
+                    <p class="text-xl font-semibold text-black">
+                        <a href="tel:+12257739701" class="hover:underline">(225) 773-9701</a>
+                    </p>
+                    <p class="mt-4">
+                        <!-- Email link text changed to green -->
+                        <a href="mailto:geauxshinebr@gmail.com" class="text-green-700 hover:underline">geauxshinebr@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Copyright only -->
+    <footer class="bg-green-900 text-white py-8 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; 2025 Geaux Shine Pressure Washing. All rights reserved.</p>
+            <!-- Social Media Icons (Removed) -->
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle the 'hidden' class on the mobile menu when the button is clicked
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close the mobile menu when a navigation link inside it is clicked
+        const navLinks = mobileMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Only hide if it's currently visible (not hidden)
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
